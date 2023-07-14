@@ -18,11 +18,9 @@ public class PostService {
 
     // 레포지토리 주입받음
     private final PostRepository postRepository;
-    private final UserRepository userRepository;
 
-    public PostService(PostRepository postRepository, UserRepository userRepository) {
+    public PostService(PostRepository postRepository) {
         this.postRepository = postRepository;
-        this.userRepository = userRepository;
     }
 
     // 게시글 생성
